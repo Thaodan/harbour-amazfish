@@ -81,6 +81,7 @@ public:
     virtual QString connectionState() const;
 
     bool supportsFeature(Feature f) const;
+    int notificationMaxLength();
     virtual int supportedFeatures() const = 0;
 
     virtual QString deviceType() const = 0;

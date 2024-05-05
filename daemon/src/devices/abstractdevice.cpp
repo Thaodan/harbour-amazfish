@@ -86,6 +86,13 @@ bool AbstractDevice::supportsFeature(AbstractDevice::Feature f) const
     return (supportedFeatures() & f) == f;
 }
 
+/** @brief AbstractDevice::notificationMaxLength
+  * @return Returns maximum length for Notifications
+  */
+int AbstractDevice::notificationMaxLength() {
+    return 230;
+}
+
 QString AbstractDevice::deviceName() const
 {
     return m_pairedName;
